@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="for-css.css">
+</head>
+<body>
+    <div class="container">
+        <header  class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" >Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" placeholder="Age" class="form-control" min="10" max="90">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time leaner</option>
+                    <option value="preferno">Rather not to say</option>
+                    <option value="other">Other</option>
+                </select>               
+            </div>
+            <div class="form-group">
+                <p>Would you recommend this website to a friend?</p>
+                <label><input type="radio" name="user-recommend" class="input-radio" value="def">Definitely</label>
+                <br><label><input type="radio" name="user-recommend" class="input-radio" value="maybe">Maybe</label>
+                <br><label><input type="radio" name="user-recommend" class="input-radio" value="dont">Not sure</label>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved</p>
+                <label><input name="prefer" value="FEP" class="input-checkbox" type="checkbox">Front-end Projects</label>
+                <br><label><input name="prefer" value="BEP" class="input-checkbox" type="checkbox" >Back-end Projects</label>
+                <br><label><input name="prefer" value="C" class="input-checkbox" type="checkbox">Challenges</label>
+                <br><label><input name="prefer" value="DV" class="input-checkbox" type="checkbox">Data Visualization</label>
+                <br><label><input name="prefer" value="OSC" class="input-checkbox" type="checkbox">Open Source Community</label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestion?</p>
+                <textarea id="comments" name="comments"  class="input-textarea" placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button" >Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
